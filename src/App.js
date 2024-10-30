@@ -1,24 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Jokes from './Components/Jokes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Jokes setup="I got my daughter a fridge for her birthday." punchline="I can't wait to see her face light up when she opens it." />
+    <Jokes setup="Why do fathers take an extra pair of socks when they go golfing?" punchline="In case they get a hole in one!" />
+    <Jokes setup="What's the best thing about Switzerland?" punchline="I don't know, but the flag is a big plus." />
+    </>
   );
 }
 
